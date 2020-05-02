@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+    <meta charset="utf-8">
+    <body>
+        <label for="angka">Jumlah Orang</label><br>
+            <input type="number" id="angka" name="angka" placeholder="Jumlah Orang"><br>
+        <label for="hasil">Hasil</label><br>
+            <input type="number" id="hasil" name="hasil" placeholder="0" readonly><br><br>
+            <input type="button" onclick="count_handshake()" value="Cetak">
+    </body>
+        <script type="text/javascript">
+            function count_handshake() {
+                var jumlah = document.getElementById('angka').value;
+                var a = 0;
+                var b = 0;
+                    for(a; a < jumlah; a++){
+                        b += a;
+                }
+                    // console.log(t);
+                        var print = document.getElementById('hasil');
+                        print.value = b;
+        }
+        </script>
+</html>
